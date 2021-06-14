@@ -129,9 +129,10 @@ html{line-height:1.15;-webkit-text-size-adjust:100%;box-sizing:border-box;font-f
    */
   
   .form__main-container {
-    width: 70vh;
+    /* width: 70vh; */
     /* height: calc(100vh - 40px); */
     overflow-y: scroll;
+    background-color: #162e51;
     
   }
   

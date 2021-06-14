@@ -38,55 +38,67 @@
                                           <input class=" form__item form__item_el_heading " type="text" name="firstname" placeholder="Ваше имя" required>
                                           <fieldset class = "form__input-container form__input-container_ctrl_additional">
                                           <h3 class = "form__heading form__heading_type_ctrl-el-heading">Выберите планеты, которые хотели бы посетить</h3>
-                                          <label for="black-background" class="form__label form__label_direction_right">
-                                  <input type="checkbox" name="extra-option" id="black-background" class="form__item form__item_el_extra-options" value="black-background">
-                                             <span class="form__pseudo-item form__pseudo-item_type_checkbox"></span>
+                                         
+
+                                          <label for="planet-mercury" class="form__label form__label_direction_right">
+                                  <input type="checkbox" name="planet" id="planet-mercury" class="form__item form__item_el_extra-options" value="mercury">
+                                           
+                                  <span class="form__pseudo-item form__pseudo-item_type_checkbox"></span>
                                   <span class="form__label-text">Меркурий</span></label>
-                                         <label for="bold-heading" class="form__label form__label_direction_right">
-                                  <input type="checkbox" name="extra-option" id="bold-heading" class="form__item form__item_el_extra-options" value="bold-heading" checked>
+
+
+                                         <label for="planet-venus" class="form__label form__label_direction_right">
+                                  <input type="checkbox" name="planet" id="planet-venus" class="form__item form__item_el_extra-options" value="venus" checked>
                                             <span class="form__pseudo-item form__pseudo-item_type_checkbox"></span>
                                   <span class="form__label-text">Венера</span>
-                                  <label for="bold-heading" class="form__label form__label_direction_right">
-                                    <input type="checkbox" name="extra-option" id="bold-heading" class="form__item form__item_el_extra-options" value="bold-heading" checked>
+                                  <label for="planet-mars" class="form__label form__label_direction_right">
+                                    <input type="checkbox" name="planet" id="planet-mars" class="form__item form__item_el_extra-options" value="mars" checked>
                                               <span class="form__pseudo-item form__pseudo-item_type_checkbox"></span>
                                     <span class="form__label-text">Марс</span>
-                                    <label for="bold-heading" class="form__label form__label_direction_right">
-                                        <input type="checkbox" name="extra-option" id="bold-heading" class="form__item form__item_el_extra-options" value="bold-heading" checked>
+                                    <label for="planet-jupiter" class="form__label form__label_direction_right">
+                                        <input type="checkbox" name="planet" id="planet-jupiter" class="form__item form__item_el_extra-options" value="jupiter" checked>
                                                   <span class="form__pseudo-item form__pseudo-item_type_checkbox"></span>
                                         <span class="form__label-text">Юпитер</span>
-                                        <label for="bold-heading" class="form__label form__label_direction_right">
-                                            <input type="checkbox" name="extra-option" id="bold-heading" class="form__item form__item_el_extra-options" value="bold-heading" checked>
+                                        <label for="planet-saturn" class="form__label form__label_direction_right">
+                                            <input type="checkbox" name="planet" id="planet-saturn" class="form__item form__item_el_extra-options" value="saturn" checked>
                                                       <span class="form__pseudo-item form__pseudo-item_type_checkbox"></span>
                                             <span class="form__label-text">Сатурн</span>
-                                            <label for="bold-heading" class="form__label form__label_direction_right">
-                                                <input type="checkbox" name="extra-option" id="bold-heading" class="form__item form__item_el_extra-options" value="bold-heading" checked>
+                                            <label for="planet-uranus" class="form__label form__label_direction_right">
+                                                <input type="checkbox" name="planet" id="planet-uranus" class="form__item form__item_el_extra-options" value="uranus" checked>
                                                           <span class="form__pseudo-item form__pseudo-item_type_checkbox"></span>
                                                 <span class="form__label-text">Уран</span>
-                                                <label for="bold-heading" class="form__label form__label_direction_right">
-                                                    <input type="checkbox" name="extra-option" id="bold-heading" class="form__item form__item_el_extra-options" value="bold-heading" checked>
+                                                <label for="planet-neptune" class="form__label form__label_direction_right">
+                                                    <input type="checkbox" name="planet" id="planet-neptune" class="form__item form__item_el_extra-options" value="neptune" checked>
                                                               <span class="form__pseudo-item form__pseudo-item_type_checkbox"></span>
                                                     <span class="form__label-text">Нептун</span>
                                                     <label for = "heading" class = "form__label">Выберите удобный способ оплаты</label>
-                                                    <label for="one-column" class="form__label form__label_direction_right">
-                                                        <input type="radio" name="number-of-columns" id="one-column" class="form__item form__item_el_number-of-columns" value="one-column" checked>
-                                                          <span class="form__label-text">наличные</span>
+
+
+                                                    
+                                                    <label for="cash" class="form__label form__label_direction_right">
+                                                        <input type="radio" name="payment" id="cash" class="form__item form__item_el_number-of-columns" value="cash" checked>
                                                           <span class="form__pseudo-item form__pseudo-item_type_radio"></span>
+                                                              <span class="form__label-text">наличные</span>
                                                         </label>
-                                          <label for="two-columns" class="form__label form__label_direction_right">
-                                                  <input type="radio" name="number-of-columns" id="two-columns" for="form__label_direction_right" class="form__item form__item_el_number-of-columns" value="two-columns">
+
+                                          <label for="Bitcoin" class="form__label form__label_direction_right">
+                                                  <input type="radio" name="payment" id="Bitcoin" class="form__item form__item_el_number-of-columns" value="Bitcoin">
                                                <span class="form__pseudo-item form__pseudo-item_type_radio"></span>
                                                   <span class="form__label-text">Bitcoin</span>
                                            </label>
-                                           <label for="one-column" class="form__label form__label_direction_right">
-                                            <input type="radio" name="number-of-columns" id="one-column" class="form__item form__item_el_number-of-columns" value="one-column" checked>
-                                              <span class="form__label-text">Dogecoin</span>
-                                              <span class="form__pseudo-item form__pseudo-item_type_radio"></span>
+
+                                           <label for="Dogecoin" class="form__label form__label_direction_right">
+                                            <input type="radio" name="payment" id="Dogecoin" class="form__item form__item_el_number-of-columns" value="Dogecoin" checked>
+                                              <span class="form__pseudo-item form__pseudo-item_type_radio"></span> 
+                                               <span class="form__label-text">Dogecoin</span>
                                             </label>
-                              <label for="two-columns" class="form__label form__label_direction_right">
-                                      <input type="radio" name="number-of-columns" id="two-columns" for="form__label_direction_right" class="form__item form__item_el_number-of-columns" value="two-columns">
+
+                              <label for="Chillim" class="form__label form__label_direction_right">
+                                      <input type="radio" name="payment" id="Chillim" class="form__item form__item_el_number-of-columns" value="Chillim">
                                    <span class="form__pseudo-item form__pseudo-item_type_radio"></span>
                                       <span class="form__label-text">Chillim</span>
                               </label>
+
                               <button class="popup__button-save" id="edit__button" type="submit">Отправить заявку</button>
                            
                              </label>
