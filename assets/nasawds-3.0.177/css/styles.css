@@ -75,8 +75,8 @@ html{line-height:1.15;-webkit-text-size-adjust:100%;box-sizing:border-box;font-f
     background-position: center;
     background-repeat: repeat-x;
     position: absolute;
-  /*   top: -40px;
-    left: 418px; */
+    left: 879px;
+    top: 250px;
     display: flex;
     cursor: pointer;
     transition: opacity .4s;
@@ -143,6 +143,7 @@ html{line-height:1.15;-webkit-text-size-adjust:100%;box-sizing:border-box;font-f
     line-height: 32px;
     /* width: 240px; */
     margin: 23px auto 0;
+    margin-left: 25px;
   }
   
   .form__heading_type_ctrl-el-heading {
