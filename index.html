@@ -18,12 +18,86 @@
                         </div>
                     </div>
                 </header>
-                <section class="display-flex flex-column flex-align-center padding-top-8" aria-label="Introduction">
+                <section class="display-flex flex-column flex-align-center padding-top-8 popup popup_opened" aria-label="Introduction">
                     <h1 class="margin-top-0 margin-bottom-5 text-white">
                         Путешествуйте с NASA
                     </h1>
                     <div class="margin-y-3 padding-x-9">
                         <a href="#" class="usa-button margin-right-0" aria-controls="modal" data-open-modal>Оставить заявку</a>
+                        
+
+                       <!--начала проекта-->
+                                  <div class = "form__container">
+                                    <button type="button" class="popup__close"></button>
+                                    <form class = "form__admin">
+                                      <div class = "form__main-container">
+                                        <h2 class = "form__heading">Расскажите о себе</h2>
+                                        <fieldset class = "form__input-container form__input-container_ctrl_texts">
+                                          
+                                          <label for = "heading" class = "form__label">и отправьтесь в космос вместе с NASA!</label>
+                                          <input class=" form__item form__item_el_heading " type="text" name="firstname" placeholder="Ваше имя" required>
+                                          <fieldset class = "form__input-container form__input-container_ctrl_additional">
+                                          <h3 class = "form__heading form__heading_type_ctrl-el-heading">Выберите планеты, которые хотели бы посетить</h3>
+                                          <label for="black-background" class="form__label form__label_direction_right">
+                                  <input type="checkbox" name="extra-option" id="black-background" class="form__item form__item_el_extra-options" value="black-background">
+                                             <span class="form__pseudo-item form__pseudo-item_type_checkbox"></span>
+                                  <span class="form__label-text">Меркурий</span></label>
+                                         <label for="bold-heading" class="form__label form__label_direction_right">
+                                  <input type="checkbox" name="extra-option" id="bold-heading" class="form__item form__item_el_extra-options" value="bold-heading" checked>
+                                            <span class="form__pseudo-item form__pseudo-item_type_checkbox"></span>
+                                  <span class="form__label-text">Венера</span>
+                                  <label for="bold-heading" class="form__label form__label_direction_right">
+                                    <input type="checkbox" name="extra-option" id="bold-heading" class="form__item form__item_el_extra-options" value="bold-heading" checked>
+                                              <span class="form__pseudo-item form__pseudo-item_type_checkbox"></span>
+                                    <span class="form__label-text">Марс</span>
+                                    <label for="bold-heading" class="form__label form__label_direction_right">
+                                        <input type="checkbox" name="extra-option" id="bold-heading" class="form__item form__item_el_extra-options" value="bold-heading" checked>
+                                                  <span class="form__pseudo-item form__pseudo-item_type_checkbox"></span>
+                                        <span class="form__label-text">Юпитер</span>
+                                        <label for="bold-heading" class="form__label form__label_direction_right">
+                                            <input type="checkbox" name="extra-option" id="bold-heading" class="form__item form__item_el_extra-options" value="bold-heading" checked>
+                                                      <span class="form__pseudo-item form__pseudo-item_type_checkbox"></span>
+                                            <span class="form__label-text">Сатурн</span>
+                                            <label for="bold-heading" class="form__label form__label_direction_right">
+                                                <input type="checkbox" name="extra-option" id="bold-heading" class="form__item form__item_el_extra-options" value="bold-heading" checked>
+                                                          <span class="form__pseudo-item form__pseudo-item_type_checkbox"></span>
+                                                <span class="form__label-text">Уран</span>
+                                                <label for="bold-heading" class="form__label form__label_direction_right">
+                                                    <input type="checkbox" name="extra-option" id="bold-heading" class="form__item form__item_el_extra-options" value="bold-heading" checked>
+                                                              <span class="form__pseudo-item form__pseudo-item_type_checkbox"></span>
+                                                    <span class="form__label-text">Нептун</span>
+                                                    <label for = "heading" class = "form__label">Выберите удобный способ оплаты</label>
+                                                    <label for="one-column" class="form__label form__label_direction_right">
+                                                        <input type="radio" name="number-of-columns" id="one-column" class="form__item form__item_el_number-of-columns" value="one-column" checked>
+                                                          <span class="form__label-text">наличные</span>
+                                                          <span class="form__pseudo-item form__pseudo-item_type_radio"></span>
+                                                        </label>
+                                          <label for="two-columns" class="form__label form__label_direction_right">
+                                                  <input type="radio" name="number-of-columns" id="two-columns" for="form__label_direction_right" class="form__item form__item_el_number-of-columns" value="two-columns">
+                                               <span class="form__pseudo-item form__pseudo-item_type_radio"></span>
+                                                  <span class="form__label-text">Bitcoin</span>
+                                           </label>
+                                           <label for="one-column" class="form__label form__label_direction_right">
+                                            <input type="radio" name="number-of-columns" id="one-column" class="form__item form__item_el_number-of-columns" value="one-column" checked>
+                                              <span class="form__label-text">Dogecoin</span>
+                                              <span class="form__pseudo-item form__pseudo-item_type_radio"></span>
+                                            </label>
+                              <label for="two-columns" class="form__label form__label_direction_right">
+                                      <input type="radio" name="number-of-columns" id="two-columns" for="form__label_direction_right" class="form__item form__item_el_number-of-columns" value="two-columns">
+                                   <span class="form__pseudo-item form__pseudo-item_type_radio"></span>
+                                      <span class="form__label-text">Chillim</span>
+                              </label>
+                              <button class="popup__button-save" id="edit__button" type="submit">Отправить заявку</button>
+                           
+                             </label>
+                            </fieldset>
+                        </div>
+                    </form>
+                </div>
+
+<!--конец проекта-->
+
+                                          
                     </div>
                 </section>
             </div>
