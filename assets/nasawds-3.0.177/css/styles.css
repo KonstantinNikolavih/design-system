@@ -29,10 +29,15 @@ html{line-height:1.15;-webkit-text-size-adjust:100%;box-sizing:border-box;font-f
 
 
   /* bootstrap-4.ru*/
+
+  
   .fad__show {
     opacity: 1;
   }
-  
+  .modal {
+    z-index: 1072;
+  }
+
   
   
   
