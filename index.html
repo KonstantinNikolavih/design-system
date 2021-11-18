@@ -1,263 +1,175 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="utf-8" />
-        <title>NASA</title>
-        <script src="assets/nasawds-3.0.177/js/uswds-init.min.js"></script>
-        <link rel="stylesheet" href="assets/nasawds-3.0.177/css/styles.css" />
-    </head>
-    <body>
-        <main id="main-content">
-            <div class="height-viewport" style="background-image: url(./assets/nasawds-3.0.177/img/earth.jpg);">
-                <header class="usa-header usa-header--extended">
-                    <div class="usa-navbar">
-                        <div class="usa-logo" id="extended-logo">
-                            <a href="/" title="Home" aria-label="Home">
-                                <img src="assets/nasawds-3.0.177/img/nasa-logo.png" alt="NASA logo" class="width-15"/>
-                            </a>
-                        </div>
+
+<head>
+    <meta charset="utf-8" />
+    <title>NASA</title>
+    <script src="assets/nasawds-3.0.177/js/uswds-init.min.js"></script>
+    <link rel="stylesheet" href="assets/nasawds-3.0.177/css/styles.css">
+</head>
+
+<body>
+    <main id="main-content">
+        <div class="height-viewport" style="background-image: url(./assets/nasawds-3.0.177/img/earth.jpg);">
+            <header class="usa-header usa-header--extended">
+                <div class="usa-navbar">
+                    <div class="usa-logo" id="extended-logo">
+                        <a href="/" title="Home" aria-label="Home">
+                            <img src="assets/nasawds-3.0.177/img/nasa-logo.png" alt="NASA logo" class="width-15" />
+                        </a>
                     </div>
-                </header>
-                <section class="display-flex flex-column flex-align-center padding-top-8" aria-label="Introduction">
-                    <h1 class="margin-top-0 margin-bottom-5 text-white">
-                        Путешествуйте с NASA
-                    </h1>
-                    <div class="margin-y-3 padding-x-9">
-                        <a href="#" class="usa-button margin-right-0" aria-controls="modal" data-open-modal>Оставить заявку</a>
-                        
-
-                       <!--начала проекта-->
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-    Запустить модальное окно
-  </button>
-
-  <div id="exampleModalLive" class="modal fad__show" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" style="display: block; padding-right: 16px;"></div>
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <popup class="popup__class"></popup>
-<button class="$theme-modal-border-radius" data-close-modal></button>
-
-                       <!--button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                        Запустить модальное окно
-                      </button>
-                      
-                      <!-- Modal -->
-                      <!--div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                              </button>
-                            </div-->
-                
-                                  <div class="modal form__container">
-                                    
-                                    <form class="form__admin">
-                                        <button type="button" class="popup__close"></button>
-                                      <div class="form__main-container">
-                                     
-                                        <h2 class="form__heading">Расскажите о себе</h2>
-                                        <fieldset class="form__input-container form__input-container_ctrl_texts">
-                                          
-                                          <label for="heading" class="form__label">и отправьтесь в космос вместе с NASA!</label>
-                                          <input class="form__item form__item_el_heading" type="text" name="firstname" placeholder="Ваше имя" required>
-                                          <fieldset class="form__input-container form__input-container_ctrl_additional">
-                                          <h3 class="form__heading form__heading_type_ctrl-el-heading">Выберите планеты, которые хотели бы посетить</h3>
-                                         
-
-                                          <label for="planet-mercury" class="form__label form__label_direction_right">
-                                  <input type="checkbox" name="planet" id="planet-mercury" class="form__item form__item_el_extra-options" value="mercury">
-                                           
-                                  <span class="form__pseudo-item form__pseudo-item_type_checkbox"></span>
-                                  <span class="form__label-text">Меркурий</span></label>
-
-
-
-
-
-
-                                         <label for="planet-venus" class="form__label form__label_direction_right">
-                                  <input type="checkbox" name="planet" id="planet-venus" class="form__item form__item_el_extra-options" value="venus">
-                                            <span class="form__pseudo-item form__pseudo-item_type_checkbox"></span>
-                                  <span class="form__label-text">Венера</span>
-                                  <label for="planet-mars" class="form__label form__label_direction_right">
-                                    <input type="checkbox" name="planet" id="planet-mars" class="form__item form__item_el_extra-options" value="mars">
-                                              <span class="form__pseudo-item form__pseudo-item_type_checkbox"></span>
-                                    <span class="form__label-text">Марс</span>
-                                    <label for="planet-jupiter" class="form__label form__label_direction_right">
-                                        <input type="checkbox" name="planet" id="planet-jupiter" class="form__item form__item_el_extra-options" value="jupiter">
-                                                  <span class="form__pseudo-item form__pseudo-item_type_checkbox"></span>
-                                        <span class="form__label-text">Юпитер</span>
-                                        <label for="planet-saturn" class="form__label form__label_direction_right">
-                                            <input type="checkbox" name="planet" id="planet-saturn" class="form__item form__item_el_extra-options" value="saturn">
-                                                      <span class="form__pseudo-item form__pseudo-item_type_checkbox"></span>
-                                            <span class="form__label-text">Сатурн</span>
-                                            <label for="planet-uranus" class="form__label form__label_direction_right">
-                                                <input type="checkbox" name="planet" id="planet-uranus" class="form__item form__item_el_extra-options" value="uranus">
-                                                          <span class="form__pseudo-item form__pseudo-item_type_checkbox"></span>
-                                                <span class="form__label-text">Уран</span>
-                                                <label for="planet-neptune" class="form__label form__label_direction_right">
-                                                    <input type="checkbox" name="planet" id="planet-neptune" class="form__item form__item_el_extra-options" value="neptune">
-                                                              <span class="form__pseudo-item form__pseudo-item_type_checkbox"></span>
-                                                    <span class="form__label-text">Нептун</span>
-                                                    <label for="heading" class="form__label">Выберите удобный способ оплаты</label>
-
-
-
-                                                    <label for="cash" class="form__label form__label_direction_right">
-                                                        <input type="radio" name="payment" id="cash" class="form__item form__item_el_number-of-columns" value="cash">
-                                                          <span class="form__pseudo-item form__pseudo-item_type_radio"></span>
-                                                              <span class="form__label-text">наличные</span>
-                                                        </label>
-
-                                          <label for="Bitcoin" class="form__label form__label_direction_right">
-                                                  <input type="radio" name="payment" id="Bitcoin" class="form__item form__item_el_number-of-columns" value="Bitcoin">
-                                               <span class="form__pseudo-item form__pseudo-item_type_radio"></span>
-                                                  <span class="form__label-text">Bitcoin</span>
-                                           </label>
-
-                                           <label for="Dogecoin" class="form__label form__label_direction_right">
-                                            <input type="radio" name="payment" id="Dogecoin" class="form__item form__item_el_number-of-columns" value="Dogecoin">
-                                              <span class="form__pseudo-item form__pseudo-item_type_radio"></span> 
-                                               <span class="form__label-text">Dogecoin</span>
-                                            </label>
-
-                              <label for="Chillim" class="form__label form__label_direction_right">
-                                      <input type="radio" name="payment" id="Chillim" class="form__item form__item_el_number-of-columns" value="Chillim">
-                                   <span class="form__pseudo-item form__pseudo-item_type_radio"></span>
-                                      <span class="form__label-text">Chillim</span>
-                              </label>
-
-                              <button class="popup__button-save" id="edit__button" type="submit">Отправить заявку</button>
-                           
-                             </label>
-                            </fieldset>
-                        </div>
-                    </form>
                 </div>
-
-<!--конец проекта-->
-
-                                          
-                    </div>
-                </section>
+            </header>
+            <section class="display-flex flex-column flex-align-center padding-top-8" aria-label="Introduction">
+                <h1 class="margin-top-0 margin-bottom-5 text-white">
+                    Путешествуйте с NASA
+                </h1>
+                <div class="margin-y-3 padding-x-9">
+                    <a href="#example-modal-1" class="usa-button margin-right-0 data-open-modal" aria-controls="example-modal-1" data-open-modal>Оставить заявку</a>
+                </div>
+            </section>
+        </div>
+        <section class="grid-container usa-section">
+            <div class="grid-row grid-gap">
+                <div class="tablet:grid-col-4">
+                    <h2 class="font-heading-xl margin-top-0 tablet:margin-bottom-0">Весь космос вместе с NASA!</h2>
+                </div>
+                <div class="tablet:grid-col-8 usa-prose">
+                    <p>NASA осуществляет мечты людей о космическом отдыхе с 1995 года – уже 26 лет! Мы предлагаем путешествия на 7 планетах (все кроме Земли, а до 2006 на 8 - тогда Плутон ещё считался планетой). Вниманию космо-туристов NASA представлены
+                        лучшие курорты и отели Меркурия, Венеры, Марса, Юпитера, Сатурна, Урана и Нептуна.</p>
+                    <p>Мы также обладаем самой большой франчайзинговой сетью в солнечной системе, которая насчитывает более 800 фирменных офисов. Помимо этого, для наших космо-туристов открыта единственная на Земле премиальная сеть агентств NASA Elite Service,
+                        которая на данный момент насчитывает более 50 офисов продаж.</p>
+                </div>
             </div>
-            <section class="grid-container usa-section">
+        </section>
+
+        <section class="usa-graphic-list usa-section usa-section--dark">
+            <div class="grid-container">
+                <div class="usa-graphic-list__row grid-row grid-gap">
+                    <div class="usa-media-block tablet:grid-col">
+                        <img class="usa-media-block__img height-15" src="./assets/nasawds-3.0.177/img/spaceship.png" alt="">
+                        <div class="usa-media-block__body">
+                            <h2 class="usa-graphic-list__heading">Посетите Марс</h2>
+                            <p>Мы сотрудничаем с ведущими мировыми туристическими компаниями, предлагая горящие путевки на Марс.</p>
+                        </div>
+                    </div>
+                    <div class="usa-media-block tablet:grid-col">
+                        <img class="usa-media-block__img height-15" src="./assets/nasawds-3.0.177/img/human-with-flag.png" alt="">
+                        <div class="usa-media-block__body">
+                            <h2 class="usa-graphic-list__heading">Проверяем на себе</h2>
+                            <p>Наши сотрудники регулярно совершают ознакомительные поездки, благодаря которым они узнают особенности отелей на всех планетах.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="usa-graphic-list__row grid-row grid-gap">
+                    <div class="usa-media-block tablet:grid-col">
+                        <img class="usa-media-block__img height-15" src="./assets/nasawds-3.0.177/img/rocket.png" alt="">
+                        <div class="usa-media-block__body">
+                            <h2 class="usa-graphic-list__heading">Экономим ваше время</h2>
+                            <p>Обращаясь к нам, вы можете быть уверены, что мы подберем для вас подходящий тур за короткий промежуток времени.</p>
+                        </div>
+                    </div>
+                    <div class="usa-media-block tablet:grid-col">
+                        <img class="usa-media-block__img height-15" src="./assets/nasawds-3.0.177/img/pay.png" alt="">
+                        <div class="usa-media-block__body">
+                            <h2 class="usa-graphic-list__heading">В ответе за вашу безопасность</h2>
+                            <p>Мы сделаем все, чтобы ваше путешествие было не только увлекательным, но и безопасным.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="usa-section">
+            <div class="grid-container">
+                <h2 class="font-heading-xl margin-y-0">Способы оплаты</h2>
+                <p class="usa-intro">Мы предлагаем несколько вариантов оплаты: наличными, при помощи биткоина(BTC), dogecoin(Doge) и чиллим(CHLL). Также у вас есть возможность приобрести тур в рассрочку с первоначальным взносом в размере всего 10% от стоимости. Для юридических
+                    лиц предусмотрены беспроцентные денежные переводы на расчетный счет.</p>
+                <div class="margin-y-3">
+                    <a href="#" class="usa-button margin-right-0"  data-open-modal>Оставить заявку</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="usa-footer">
+        <div class="usa-footer__secondary-section">
+            <div class="grid-container">
                 <div class="grid-row grid-gap">
-                    <div class="tablet:grid-col-4">
-                        <h2 class="font-heading-xl margin-top-0 tablet:margin-bottom-0">Весь космос вместе с NASA!</h2>
-                    </div>
-                    <div class="tablet:grid-col-8 usa-prose">
-                        <p>NASA осуществляет мечты людей о космическом отдыхе с 1995 года – уже 26 лет! Мы предлагаем путешествия на 7 планетах (все кроме Земли, а до 2006 на 8 - тогда Плутон ещё считался планетой). Вниманию космо-туристов NASA представлены лучшие курорты и отели Меркурия, Венеры, Марса, Юпитера, Сатурна, Урана и Нептуна.</p>
-                        <p>Мы также обладаем самой большой франчайзинговой сетью в солнечной системе, которая насчитывает более 800 фирменных офисов. Помимо этого, для наших космо-туристов открыта единственная на Земле премиальная сеть агентств NASA Elite Service, которая на данный момент насчитывает более 50 офисов продаж.</p>
-                    </div>
-                </div>
-            </section>
-
-            <section class="usa-graphic-list usa-section usa-section--dark">
-                <div class="grid-container">
-                    <div class="usa-graphic-list__row grid-row grid-gap">
-                        <div class="usa-media-block tablet:grid-col">
-                            <img class="usa-media-block__img height-15" src="./assets/nasawds-3.0.177/img/spaceship.png" alt="">
-                            <div class="usa-media-block__body">
-                                <h2 class="usa-graphic-list__heading">Посетите Марс</h2>
-                                <p>Мы сотрудничаем с ведущими мировыми туристическими компаниями, предлагая горящие путевки на Марс.</p>
-                            </div>
+                    <div class="usa-footer__logo grid-row mobile-lg:grid-col-6 mobile-lg:grid-gap-2">
+                        <div class="mobile-lg:grid-col-auto">
+                            <img class="usa-footer__logo-img" src="./assets/nasawds-3.0.177/img/nasa-logo-vector-1.svg" alt="NASA logo">
                         </div>
-                        <div class="usa-media-block tablet:grid-col">
-                            <img class="usa-media-block__img height-15" src="./assets/nasawds-3.0.177/img/human-with-flag.png" alt="">
-                            <div class="usa-media-block__body">
-                                <h2 class="usa-graphic-list__heading">Проверяем на себе</h2>
-                                <p>Наши сотрудники регулярно совершают ознакомительные поездки, благодаря которым они узнают особенности отелей на всех планетах.</p>
-                            </div>
+                        <div class="mobile-lg:grid-col-auto">
+                            <p class="usa-footer__logo-text">Национальное управление по аэронавтике и исследованию космического пространства</p>
                         </div>
                     </div>
-                    <div class="usa-graphic-list__row grid-row grid-gap">
-                        <div class="usa-media-block tablet:grid-col">
-                            <img class="usa-media-block__img height-15" src="./assets/nasawds-3.0.177/img/rocket.png" alt="">
-                            <div class="usa-media-block__body">
-                                <h2 class="usa-graphic-list__heading">Экономим ваше время</h2>
-                                <p>Обращаясь к нам, вы можете быть уверены, что мы подберем для вас подходящий тур за короткий промежуток времени.</p>
+                    <div class="usa-footer__contact-links mobile-lg:grid-col-6">
+                        <div class="usa-footer__social-links grid-row grid-gap-1">
+                            <div class="grid-col-auto">
+                                <a class="usa-social-link usa-social-link--twitter" href="https://twitter.com/nasa" target="_blank">
+                                    <span>Twitter</span>
+                                </a>
                             </div>
-                        </div>
-                        <div class="usa-media-block tablet:grid-col">
-                            <img class="usa-media-block__img height-15" src="./assets/nasawds-3.0.177/img/pay.png" alt="">
-                            <div class="usa-media-block__body">
-                                <h2 class="usa-graphic-list__heading">В ответе за вашу безопасность</h2>
-                                <p>Мы сделаем все, чтобы ваше путешествие было не только увлекательным, но и безопасным.</p>
+                            <div class="grid-col-auto">
+                                <a class="usa-social-link usa-social-link--youtube" href="https://www.youtube.com/nasa" target="_blank">
+                                    <span>YouTube</span>
+                                </a>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="usa-section">
-                <div class="grid-container">
-                    <h2 class="font-heading-xl margin-y-0">Способы оплаты</h2>
-                    <p class="usa-intro">Мы предлагаем несколько вариантов оплаты: наличными, при помощи биткоина(BTC), dogecoin(Doge) и чиллим(CHLL). Также у вас есть возможность приобрести тур в рассрочку с первоначальным взносом в размере всего 10% от стоимости. Для юридических лиц предусмотрены беспроцентные денежные переводы на расчетный счет.</p>
-                    <div class="margin-y-3">
-                        <a href="#" class="usa-button margin-right-0" aria-controls="modal" data-open-modal>Оставить заявку</a>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <footer class="usa-footer">
-            <div class="usa-footer__secondary-section">
-                <div class="grid-container">
-                    <div class="grid-row grid-gap">
-                        <div class="usa-footer__logo grid-row mobile-lg:grid-col-6 mobile-lg:grid-gap-2">
-                            <div class="mobile-lg:grid-col-auto">
-                                <img class="usa-footer__logo-img" src="./assets/nasawds-3.0.177/img/nasa-logo-vector-1.svg" alt="NASA logo">
-                            </div>
-                            <div class="mobile-lg:grid-col-auto">
-                                <p class="usa-footer__logo-text">Национальное управление по аэронавтике и исследованию космического пространства</p>
-                            </div>
-                        </div>
-                        <div class="usa-footer__contact-links mobile-lg:grid-col-6">
-                            <div class="usa-footer__social-links grid-row grid-gap-1">
-                                <div class="grid-col-auto">
-                                    <a class="usa-social-link usa-social-link--twitter" href="https://twitter.com/nasa" target="_blank">
-                                        <span>Twitter</span>
-                                    </a>
-                                </div>
-                                <div class="grid-col-auto">
-                                    <a class="usa-social-link usa-social-link--youtube" href="https://www.youtube.com/nasa" target="_blank">
-                                        <span>YouTube</span>
-                                    </a>
-                                </div>
-                                <div class="grid-col-auto">
-                                    <a class="usa-social-link usa-social-link--instagram" href="https://www.instagram.com/nasa/" target="_blank">
-                                        <span>Instagram</span>
-                                    </a>
-                                </div>
+                            <div class="grid-col-auto">
+                                <a class="usa-social-link usa-social-link--instagram" href="https://www.instagram.com/nasa/" target="_blank">
+                                    <span>Instagram</span>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </footer>
-        <!-- Место для модального окна с формой -->
-        <script src="assets/nasawds-3.0.177/js/uswds.min.js"></script>
-  </body>
+        </div>
+    </footer>
+    <div class="usa-modal theme-modal-default-max-width user-modal__container" id="example-modal-1">
+        <div class="usa-modal__container-close display-flex flex-justify-end">
+            <button class="usa-button usa-button--unstyled  maxw-3 maxh-3 margin-1" data-close-modal><img class="usa-button-close maxw-3 maxh-3 " alt="закрыть" src="./assets/nasawds-3.0.177/img/close.svg "></button></div>
+        <div class="usa-modal__main display-flex flex-column " >
+            <h2 class="theme-header-font-family usa-modal__title-story margin-y-0 "> Расскажите о себе</h2>
+        <p class="usa-modal__subtitle margin-y-105 ">и отправьтесь в космос вместе с NASA!</p>
+        <label class="usa-input__label" for="modal-input-name">Ваше имя</label>
+        <input class="usa-input " id="modal-input-name" >
+        <h2 class="usa-modal__chek-planet-title theme-header-font-family ">Выберите планеты, которые хотели бы посетить</h2>
+        <ul class="usa-list usa-list--unstyled grid-row">
+            <li class="usa-modal__list grid-col-4"><input type="checkbox" id="Mercure" class="usa-checkbox__input" name="planet" value="Mercure">
+                <label class="usa-checkbox__label" for="Mercure">Меркурий</label></li>
+            <li class="usa-modal__list grid-col-4 grid-col-4"><input type="checkbox" id="Venera" class="usa-checkbox__input" name="planet" value="Venera">
+                <label class="usa-checkbox__label " for="Venera">Венера</label></li>
+            <li class="usa-modal__list grid-col-4"><input type="checkbox" id="Mars" class="usa-checkbox__input" name="planet" value="Mars">
+                <label class="usa-checkbox__label " for="Mars">Марс</label></li>
+            <li class="usa-modal__list grid-col-4"><input type="checkbox" id="Jupiter" class="usa-checkbox__input" name="planet" value="Jupiter">
+                <label class="usa-checkbox__label " for="Jupiter">Юпитер</label></li>
+            <li class="usa-modal__list grid-col-4"><input type="checkbox" id="Saturn" class="usa-checkbox__input" name="planet" value="Saturn">
+                <label class="usa-checkbox__label " for="Saturn">Сатурн</label></li>
+            <li class="usa-modal__list grid-col-4"><input type="checkbox" id="Uranus" class="usa-checkbox__input" name="planet" value="Uranus">
+                <label class="usa-checkbox__label " for="Uranus">Уран</label></li>
+            <li class="usa-modal__list grid-col-4"><input type="checkbox" id="Neptune" class="usa-checkbox__input" name="planet" value="Neptune">
+                <label class="usa-checkbox__label" for="Neptune">Нептун</label></li>
+        </ul>
+        <fieldset class="usa-fieldset ">
+            <h2 class="usa-modal__chek-planet-title theme-header-font-family ">Выберите удобный способ оплаты</h2>
+            <ul class="usa-list usa-list--unstyled grid-row">
+                <li class="usa-modal__list grid-col-6"><input class="usa-radio__input" id="cash" type="radio" name="cash-real" value="cash">
+                    <label class="usa-radio__label " for="cash">Наличные</label></li>
+                <li class="usa-modal__list grid-col-6"><input class="usa-radio__input" id="Bitcoin" type="radio" name="cash-real" value="Bitcoin">
+                    <label class="usa-radio__label " for="Bitcoin">Bitcoin</label></li>
+                <li class="usa-modal__list grid-col-6"><input class="usa-radio__input" id="Dogecoin" type="radio" name="cash-real" value="Dogecoin">
+                    <label class="usa-radio__label " for="Dogecoin">Dogecoin</label></li>
+                <li class="usa-modal__list grid-col-6"><input class="usa-radio__input" id="Chillim" type="radio" name="cash-real" value="Chillim">
+                    <label class="usa-radio__label " for="Chillim">Chillim</label></li></ul>
+        </fieldset>
+    </div>
+    <div class="display-flex flex-justify-center margin-y-2 ">
+        <button class="usa-button ">Отправить заявку</button>
+    </div>
+    </div>
+    <!-- Место для модального окна с формой -->
+    <script src="assets/nasawds-3.0.177/js/uswds.min.js "></script>
+</body>
+
 </html>
